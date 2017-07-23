@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>{% block title %}Club des critiques{% endblock %}</title>
+        {% block stylesheets %}
+            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+            <link rel="stylesheet" href="{{ asset('css/materialize.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        {% endblock %}
+        
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+    </head>
+    <body>
+        <div>        
+    <nav class="teal lighten-4" role="navigation">
+        <div class="nav-wrapper ">
+            <div class="nav-wrapper container">
+                <div class="">
+					<a id="logo-container" href="#" class="brand-logo">
+						 <img class="logo" src="{{ asset('images/logo.png') }}">
+					</a>
+                </div>                 
+                 <div class="" style="padding-left: 20%">
+                    <a href="#" id="">
+                         Calculer le yield management
+                     </a>
+                </div>                
+            </div>
+        </div>
+
+    </nav>
+</div>
+
+{% block body %}
+
+{% endblock %}                    
+<footer class="page-footer teal lighten-4">
+    <div class="container">
+        <div class="row">
+            <div class="col s10 ">
+            </div>
+            <div class="col s4 right">
+                <ul>
+                    <li><a class="" href="#">CGU </a></li>
+                    <li><a class="" href="#">POLITIQUE DE CONFIDENTIALITE</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            © 2017 Copyright Text
+        </div>
+    </div>
+</footer>
+
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-3.1.1.min.js') }}"></script>
+            <script src="{{ asset('js/materialize.min.js') }}"></script>
+            <script src="{{ asset('js/init.js') }}"></script>
+            <link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.15/css/jquery.dataTables.css">
+			<script type="text/javascript" charset="utf8" src="//cdn.datatables.net/1.10.15/js/jquery.dataTables.js"></script>
+        {% endblock %}
+    </body>
+</html>
